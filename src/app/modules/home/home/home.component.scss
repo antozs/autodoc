@@ -1,0 +1,199 @@
+@import '~src/sass/_colors';
+
+.content-sections{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+section{
+    width: 100%;
+    height: 600px;
+    display: block;
+}
+
+
+.home{ 
+    padding-left: 50px;
+    padding-right: 50px;
+    background: linear-gradient(180deg, $primary-color 0%, $primary-color-dark 100%);
+}
+
+.products{
+    background-color: $gray-color;
+}
+.detail{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    float: left;
+}
+
+.content{
+    margin: auto;
+    display: block;
+    color: white;
+}
+
+
+.detail-two{
+    width: 50%;
+    float: right;
+    display: flex;
+    height: 100%;
+    position: relative;
+
+    .row{
+        width: 100%;
+
+        .col-md-4{
+            margin-top: 100px;
+        }
+
+        .col-md-4.card-middle{
+            margin-top: 40px;
+        }
+    } 
+}
+
+
+.img-motor{
+    margin: auto;
+    z-index: 10;
+
+}
+
+.img-motor_background{
+    width: 50px;
+    height: 100%;
+    background-color: $orange-color;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    left: 50%;
+}
+.img-motor_background-blue{
+    width: 100px;
+    height: 100%;
+    background-color: $home-blue;
+    position: absolute;
+    display: block;
+    z-index: 0;
+    left: 50%;
+}
+
+.detail-products{
+    margin: auto;
+    margin-top: 100px;
+    display: block; 
+    min-width: 390px;
+    z-index: 2;
+}
+
+.text-products{
+    margin-top: 40px;
+}
+
+.img-a-products{
+    top: 0px;
+    left: 60px;
+    z-index: 1;
+    position: absolute;
+}
+
+.brands-section{
+    background-color: $orange-color;
+    color: white;
+    display: flex;
+    width: 100%;
+
+    .content-sections{
+        padding-right: 0;
+        width: 100%;
+    }
+}
+
+.brands{
+    margin-top: 50px;
+    position: absolute;
+}
+
+.background{
+    width: 110%;  
+    right: 0;
+}
+
+.frequent-questions-section{
+    
+    .content-sections{
+        padding-right: 0;
+        width: 100%;
+        display: flex;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        app-frequent-questions{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .home{
+        overflow: hidden;
+        .detail-two{
+            margin-top: -50px;
+        }
+    }
+    .img-motor > img{
+        max-width: 300px;
+    }
+    .img-motor_background{
+        transform: rotate(90deg);
+    }
+    .img-motor_background-blue{
+        transform: rotate(90deg);
+    }
+
+    
+    section{
+        width: 100%;
+        height: 900px;
+        display: block;
+    }
+    
+    
+    .detail-two{
+        width: 100%;
+        height: 50%;
+    }
+    .detail{
+        width: 100%;
+        height: 50%;
+    }
+
+    .content-sections{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .products{
+        overflow: hidden;
+        .text-products{
+
+        }
+    }
+
+    .brands-section{
+        height: 600px;
+        overflow: hidden;
+
+        .content-sections{
+
+            .detail-two{
+                .brands{
+                  max-width: 300px;
+                }
+            }
+        }
+    }
+}

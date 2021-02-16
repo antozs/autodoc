@@ -1,0 +1,30 @@
+@import '~src/sass/_colors';
+ 
+footer{
+    background-color: $primary-color;
+    min-height: 150px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 50px;
+    color: $gray-color;
+}   
+
+.brand{
+    display: flex;
+}
+
+.navbar-brand{
+    margin: 0 auto;
+}
+
+i{
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+.links{
+    display: flex;
+}
+.icon-links{
+    margin: auto;
+}

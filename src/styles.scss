@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'sass/_colors';
+@import 'sass/_fonts'; 
+$fa-font-path:'../node_modules/font-awesome/fonts';
+@import '../node_modules/font-awesome/scss/font-awesome';
+
+
+h1, h3{
+    font-family: 'PFBulletinSansPro';
+}
+p{
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+h3{
+    font-size: 30px;
+}
+h1{
+    font-size: 50px;
+}

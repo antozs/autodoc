@@ -1,0 +1,29 @@
+.card{
+    width: 100%; 
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px grey;
+    max-width: 200px;
+}
+
+.card-img-top{
+    width: 80%;
+    margin:auto;
+    margin-top: 20px;
+}
+
+.card-body{
+    display: flex;
+    text-align: center;
+}
+.card-title{
+    margin: auto;
+
+    h4{
+        font-family: 'PFBulletinSansPro';
+    }
+    p{
+        font-family: 'Roboto';
+        color: grey;
+    }
+}

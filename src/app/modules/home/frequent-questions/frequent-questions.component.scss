@@ -1,0 +1,32 @@
+ 
+
+.title{
+    margin: auto;
+}
+
+.card{
+    border: solid 1px #1A9EF6;
+    margin: 10px;
+}
+
+.card-body{
+    border-top: solid 1px #1A9EF6;
+ 
+}
+
+.card-header{
+    background-color: #ffffff;
+}
+.btn-head{
+    color:  #1A9EF6;
+    width: 100%;
+    text-align: left;
+
+    .text{
+        float: left;
+    }
+    .plus{
+        float: right;
+    }
+}
+

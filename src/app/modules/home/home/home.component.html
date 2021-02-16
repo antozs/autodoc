@@ -1,0 +1,88 @@
+<app-nav-bar></app-nav-bar>
+
+  <section class="home">
+   
+    <div class="detail">
+      <div class="content">
+        <h3>TU ALIADO EN</h3>
+        <h1>AUTOPARTES</h1>
+        <p>
+          Encuentra repuestos originales y genéricos
+        </p>
+      </div>
+    </div>
+    <div class="detail-two">
+      <div class="img-motor_background">
+  
+      </div>
+      <div class="img-motor_background-blue">
+  
+      </div>
+      <div class="img-motor">
+  
+        <img [src]="'/assets/images/Motor.png'" alt="">
+      </div>
+    </div> 
+  </section>
+  
+  <section class="products">
+    <div class="content-sections">
+      <div class="detail">
+        <div class="img-a-products">
+          <img [src]="'/assets/images/A.png'" alt="">
+        </div>
+  
+        <div class="detail-products">
+          <h1>PRODUCTOS</h1>
+          <p class="text-products">Compra y venta segura de productos originales</p>
+          <p>nuevos y de segunda mano.</p>
+        </div>
+      </div>
+      <div class="detail-two">
+        <div class="row">
+          <div class="col-6 col-md-4 ">
+            <app-card>
+            </app-card>
+          </div>
+          <div class="col-6 col-md-4  card-middle">
+            <app-card>
+            </app-card>
+          </div>
+          <div class="col-md-4" [hidden]="isMobile">
+            <app-card>
+            </app-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="brands-section">
+    <div class="content-sections">
+    <div class="detail">
+      <div class="img-a-products">
+        <img [src]="'/assets/images/D.png'" alt="">
+      </div>
+  
+      <div class="detail-products">
+      <h1>MARCAS</h1>
+      <p class="text-products">Trabajamos con las mejores marcas</p>
+      <p>Escribenos y cotiza.</p>
+    </div>
+    </div>
+    <div class="detail-two"> 
+      <div class="row">
+        <img class="brands" [src]="'/assets/images/marcas.png'" alt="">
+
+    
+      </div>
+      <img class="background" [src]="'/assets/images/auto.png'" alt="">
+    </div>
+  </div>
+  </div>
+ <div class="frequent-questions-section">
+  <div class="content-sections">
+    <app-frequent-questions></app-frequent-questions>
+  </div>
+ </div>
+<app-footer></app-footer>
