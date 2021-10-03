@@ -1,6 +1,7 @@
 import { isGeneratedFile } from '@angular/compiler/src/aot/util';
 import { Component, HostListener, OnInit } from '@angular/core';
 import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
+import { DATA_HOME, IData } from 'src/app/shared/_data/home.data';
 import { Dashboard } from '../../../shared/_interfaces/dashboard';
 
 @Component({
@@ -12,15 +13,16 @@ export class HomeComponent implements OnInit {
 
   dashboard: Dashboard;
   isMobile: boolean = false;
- isMobileSubject: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  homeProducts: Array<IData> = DATA_HOME;
+  
+  isMobileSubject: BehaviorSubject<boolean> = new BehaviorSubject(false);
 //isMobile: Observable<boolean> = new Observable();
   
   constructor() { }
 
   ngOnInit(): void {
     this.dashboard = new Dashboard();
-    this.validateIsMobile();  
-    
+    this.validateIsMobile();   
     //this.isMobile = this.isMobileSubject.asObservable().pipe(); 
     //console.log("DAsssssssh",this.dashboard.innerWidth);
   }

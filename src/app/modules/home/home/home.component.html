@@ -18,9 +18,8 @@
       <div class="img-motor_background-blue">
   
       </div>
-      <div class="img-motor">
-  
-        <img [src]="'/assets/images/Motor.png'" alt="">
+      <div class="img-motor"> 
+        <img class="img-motor-content" [src]="'/assets/images/Motor.png'" alt="">
       </div>
     </div> 
   </section>
@@ -41,15 +40,15 @@
       <div class="detail-two">
         <div class="row">
           <div class="col-6 col-md-4 ">
-            <app-card>
+            <app-card [product]="homeProducts[0]">
             </app-card>
           </div>
           <div class="col-6 col-md-4  card-middle">
-            <app-card>
+            <app-card [product]="homeProducts[1]">
             </app-card>
           </div>
           <div class="col-md-4" [hidden]="isMobile">
-            <app-card>
+            <app-card [product]="homeProducts[2]">
             </app-card>
           </div>
         </div>
@@ -70,11 +69,9 @@
       <p>Escribenos y cotiza.</p>
     </div>
     </div>
-    <div class="detail-two"> 
+    <div class="detail-two" style="overflow: hidden;"> 
       <div class="row">
-        <img class="brands" [src]="'/assets/images/marcas.png'" alt="">
-
-    
+        <img class="brands" [src]="'/assets/images/marcas.png'" alt=""> 
       </div>
       <img class="background" [src]="'/assets/images/auto.png'" alt="">
     </div>
