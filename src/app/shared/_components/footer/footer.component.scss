@@ -31,3 +31,13 @@ i{
 li{
   list-style-type: none;
 }
+
+@media screen and(max-width: 600px){
+    footer{
+        padding-left: 0;
+    }
+
+    .contact-image{
+        width: 100%;
+    }
+}
